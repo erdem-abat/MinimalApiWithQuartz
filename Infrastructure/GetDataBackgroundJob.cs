@@ -18,7 +18,7 @@ namespace Infrastructure
         }
         public async Task Execute(IJobExecutionContext context)
         {
-            var connectionString = _configuration.GetConnectionString("DefaultConnection");
+            var connectionString = _configuration.GetConnectionString("Dev");
             
             try
             {
